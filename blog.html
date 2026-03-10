@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | High Street Fitness</title>
+    <style>
+        :root {
+            --brand-green: #8cc63f;
+            --brand-teal: #00a99d;
+            --brand-blue: #0056b3;
+            --dark-gray: #4a4a4a;
+        }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; color: var(--dark-gray); background-color: #f9f9f9; }
+        
+        /* Header */
+        header { padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; background: white; border-bottom: 2px solid #eee; }
+        .logo { height: 60px; }
+        nav a { margin-left: 20px; text-decoration: none; color: var(--dark-gray); font-weight: bold; font-size: 0.9em; }
+
+        /* Blog Layout */
+        .container { max-width: 800px; margin: 50px auto; padding: 20px; }
+        .blog-post { background: white; padding: 30px; margin-bottom: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .blog-post h2 { color: var(--brand-blue); margin-top: 0; }
+        .meta { font-size: 0.85em; color: #888; margin-bottom: 15px; }
+        .read-more { display: inline-block; margin-top: 15px; color: var(--brand-teal); font-weight: bold; text-decoration: none; }
+        
+        footer { text-align: center; padding: 40px; font-size: 0.9em; color: #777; }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.jpg" alt="High Street Fitness Logo" class="logo">
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="about_us.html">ABOUT US</a>
+        <a href="blog.html">BLOG</a>
+        <a href="#">CLASSES</a>
+        <a href="#">LOCATIONS</a>
+        <a href="#">CONTACT</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Latest News & Tips</h1>
+
+    <article class="blog-post">
+        <h2>Gym at Night: 24hr Access</h2>
+        <div class="meta">22nd May 2023 | Category: 24hr Access</div>
+        <p>We're thrilled to have you as a member of High Street Fitness! As you might already know, we use the app to grant access to our front doors outside of staffed hours. Please make sure to download and register your account for glitch-free access.</p>
+        <a href="#" class="read-more">Read More →</a>
+    </article>
+
+    <article class="blog-post">
+        <h2>HIIT Training Benefits</h2>
+        <div class="meta">15th May 2023 | Category: Workouts</div>
+        <p>High-Intensity Interval Training (HIIT) has become a popular workout style due to its numerous benefits, including increased fat loss, improved cardiovascular health, and time-efficiency. Try our new 20-minute treadmill circuit this week.</p>
+        <a href="#" class="read-more">Read More →</a>
+    </article>
+
+    <article class="blog-post">
+        <h2>Creatine and its Benefits</h2>
+        <div class="meta">9th May 2023 | Category: Nutrition</div>
+        <p>Creatine is the most widely researched sports supplement ever. It is involved in the production of energy in the body, particularly in the muscles. Here we break down the benefits for your strength and recovery.</p>
+        <a href="#" class="read-more">Read More →</a>
+    </article>
+</div>
+
+<footer>
+    <p>© 2026 High Street Fitness | Pontypool</p>
+</footer>
+
+</body>
+</html>
