@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Dashboard · HSF desk</title><link rel="stylesheet" href="css/admin.css"></head><body><div class="layout"><aside class="side"><a href="index.html"><img src="images/logo.svg" alt="High Street Fitness"></a><nav><a class="on" href="index.html">Dashboard</a><a class="" href="members.html">Members</a><a class="" href="access.html">Access log</a><a class="" href="doors.html">Doors</a><a class="" href="payments.html">Payments</a></nav></aside><div class="main"><div class="banner" id="lock-banner">Lockdown is on. All doors shown as locked. Demo only.</div><header class="top"><div><strong>Pontypool desk</strong><div class="muted">2–4 George Street · demo, not live</div></div><span class="demo">DEMO DATA</span></header><div class="content">
+<h1>Today at Pontypool</h1>
+<p class="muted">Wednesday 21/10/2026 · Europe/London · <span id="pulse">updated just now</span></p>
+<div class="kpis">
+  <div class="card"><span class="muted">In the building</span><strong>6</strong></div>
+  <div class="card"><span class="muted">Visits today</span><strong>10</strong></div>
+  <div class="card"><span class="muted">Visits this week</span><strong>32</strong></div>
+  <div class="card"><span class="muted">Revenue this month</span><strong>£554.80</strong></div>
+</div>
+<div class="grid2">
+  <section class="card"><h2>Who is in now</h2><div class="person"><span class="av" style="background:hsl(346 42% 32%)">RM</span><div><strong>Rhys Morgan</strong><div class="muted">In since 06:12 · Front entrance</div></div></div><div class="person"><span class="av" style="background:hsl(318 42% 32%)">AM</span><div><strong>Alex Morgan</strong><div class="muted">In since 07:41 · Front entrance</div></div></div><div class="person"><span class="av" style="background:hsl(215 42% 32%)">DR</span><div><strong>Dylan Rees</strong><div class="muted">In since 09:02 · Front entrance</div></div></div><div class="person"><span class="av" style="background:hsl(81 42% 32%)">HA</span><div><strong>Hasan Ali</strong><div class="muted">In since 09:28 · Front entrance</div></div></div><div class="person"><span class="av" style="background:hsl(182 42% 32%)">GP</span><div><strong>Gareth Powell</strong><div class="muted">In since 11:40 · Front entrance</div></div></div><div class="person"><span class="av" style="background:hsl(169 42% 32%)">JR</span><div><strong>Joshua Rahman</strong><div class="muted">In since 16:48 · Front entrance</div></div></div></section>
+  <section class="card"><h2>Sign-ins and sign-outs</h2><ul class="feed" id="feed"><li><strong>16:48</strong> · Joshua Rahman signed in</li><li><strong>13:10</strong> · Megan Lloyd signed out</li><li><strong>12:05</strong> · Megan Lloyd signed in</li><li><strong>11:40</strong> · Gareth Powell signed in</li><li><strong>11:02</strong> · Emily Clarke signed out</li><li><strong>10:11</strong> · Emily Clarke signed in</li><li><strong>09:40</strong> · Morgan Davies signed out</li><li><strong>09:28</strong> · Hasan Ali signed in</li><li><strong>09:02</strong> · Dylan Rees signed in</li><li><strong>08:20</strong> · Leanne Potter signed out</li><li><strong>08:16</strong> · Morgan Davies signed in</li><li><strong>07:41</strong> · Alex Morgan signed in</li><li><strong>07:05</strong> · Leanne Potter signed in</li><li><strong>06:12</strong> · Rhys Morgan signed in</li></ul></section>
+</div>
+<script>
+setInterval(function () {
+  var el = document.getElementById("pulse");
+  if (el) el.textContent = "updated " + new Date().toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" });
+}, 5000);
+</script></div></div></div></body></html>
