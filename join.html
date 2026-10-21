@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join · High Street Fitness</title>
+  <link rel="icon" href="images/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html"><img class="logo" src="images/1-hsf-brand-logo.svg" alt="HSF UK Logo"></a>
+  <nav class="desktop-nav" aria-label="Primary">
+    <details class="about">
+      <summary>About Us</summary>
+      <div class="about-menu"><a href="what-we-do.html">What We Do</a><a href="partners.html">Partners</a><a href="projects.html">Projects</a><a href="contact.html">Contact Us</a></div>
+    </details>
+    <a href="memberships.html">Memberships</a>
+    <a href="blog.html">The Blog</a>
+    <a href="https://www.facebook.com/HighStreetFitness1">Facebook</a>
+    <a href="https://www.instagram.com/highstreetfitnesspage/">Instagram</a>
+    <a href="login.html">Log in</a>
+    <a class="btn-dark" href="memberships.html">Join Now</a>
+  </nav>
+  <details class="menu-toggle">
+    <summary>Menu</summary>
+    <nav class="mobile-nav" aria-label="Mobile">
+      <a href="what-we-do.html">What We Do</a><a href="partners.html">Partners</a><a href="projects.html">Projects</a><a href="contact.html">Contact Us</a>
+      <a href="memberships.html">Memberships</a>
+      <a href="blog.html">The Blog</a>
+      <a href="login.html">Log in</a>
+      <a class="btn-dark" href="memberships.html">Join Now</a>
+    </nav>
+  </details>
+</header>
+<main>
+<section class="section"><div class="narrow">
+  <h1>Join us</h1>
+  <p class="copy">Tell us who you are and which membership you want. This form is a preview. It does not create an account.</p>
+  <form data-preview>
+    <label class="stack"><span>Membership</span>
+      <select class="field">
+        <option selected>Community · £18.99 / month</option>
+        <option>Standard · £27.99 / month</option>
+        <option>24 hour · £34.99 / month</option>
+      </select>
+    </label>
+    <label class="stack"><span>Name</span><input class="field" value="Jamie Cole"></label>
+    <label class="stack"><span>Email</span><input class="field" type="email" value="jamie.cole@example.com"></label>
+    <label class="stack"><span>Password</span><input class="field" type="password" value="preview-only"></label>
+    <label class="check"><input type="checkbox" checked> <span>I agree to High Street Fitness storing these details to manage my membership. Charity number 1191451.</span></label>
+    <p><button class="btn-dark" type="submit">Create account</button></p>
+    <p data-preview-note hidden class="note">Preview only. Nothing was saved. Open the <a href="member.html">member screen</a> to see a demo account.</p>
+  </form>
+</div></section></main>
+<footer class="footer">
+  <p>© 2018 – 2026 High Street Fitness</p>
+  <p>George Street, Pontypool · <a href="mailto:admin@hsfuk.org">admin@hsfuk.org</a> · Charity Number: 1191451</p>
+  <p class="preview-links">Offline preview · <a href="member.html">Member screen</a> · <a href="staff.html">Staff desk</a></p>
+</footer>
+<script src="preview.js"></script>
+</body>
+</html>

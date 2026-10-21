@@ -1,123 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>High Street Fitness | Membership</title>
-    <style>
-        :root {
-            --brand-green: #8cc63f;
-            --brand-teal: #00a99d;
-            --brand-blue: #0056b3;
-            --dark-gray: #4a4a4a;
-        }
-
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; color: var(--dark-gray); background-color: #f9f9f9; }
-
-        /* Header */
-        header { padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; background: white; border-bottom: 2px solid #eee; }
-        .logo { height: 60px; }
-        nav a { margin-left: 20px; text-decoration: none; color: var(--dark-gray); font-weight: bold; font-size: 0.9em; }
-
-        /* Membership Section */
-        .membership-grid { display: flex; justify-content: center; gap: 30px; padding: 50px 5%; flex-wrap: wrap; }
-        .card { width: 320px; background: white; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); overflow: hidden; text-align: center; }
-        .card img { width: 100%; height: 200px; object-fit: cover; }
-        
-        /* Accents */
-        .strip-blue { height: 10px; background: var(--brand-blue); }
-        .strip-teal { height: 10px; background: var(--brand-teal); }
-        .strip-green { height: 10px; background: var(--brand-green); }
-
-        .content { padding: 25px; }
-        .price { font-size: 2.2em; font-weight: bold; margin: 15px 0; color: #333; }
-        button { background: var(--brand-green); color: white; border: none; padding: 15px 30px; border-radius: 5px; cursor: pointer; font-size: 16px; font-weight: bold; transition: background 0.3s; }
-        button:hover { background: #7ab035; }
-
-        /* Modal */
-        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); }
-        .modal-content { background: white; margin: 5% auto; padding: 30px; width: 90%; max-width: 400px; border-radius: 10px; position: relative; }
-        .close { position: absolute; right: 20px; top: 10px; cursor: pointer; font-size: 20px; }
-        input { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
-        .checkbox-container { font-size: 0.85em; margin: 10px 0; }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>High Street Fitness & Wellbeing · High Street Fitness</title>
+  <link rel="icon" href="images/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header>
-    <img src="logo.jpg" alt="High Street Fitness Logo" class="logo">
- <nav>
-    <a href="index.html">HOME</a>
-    <a href="about_us.html">ABOUT US</a>
-    <a href="blog.html">BLOG</a>
-    <a href="#">CLASSES</a>
-    <a href="#">LOCATIONS</a>
-    <a href="#">CONTACT</a>
-</nav>
+<header class="site-header">
+  <a href="index.html"><img class="logo" src="images/1-hsf-brand-logo.svg" alt="HSF UK Logo"></a>
+  <nav class="desktop-nav" aria-label="Primary">
+    <details class="about">
+      <summary>About Us</summary>
+      <div class="about-menu"><a href="what-we-do.html">What We Do</a><a href="partners.html">Partners</a><a href="projects.html">Projects</a><a href="contact.html">Contact Us</a></div>
+    </details>
+    <a href="memberships.html">Memberships</a>
+    <a href="blog.html">The Blog</a>
+    <a href="https://www.facebook.com/HighStreetFitness1">Facebook</a>
+    <a href="https://www.instagram.com/highstreetfitnesspage/">Instagram</a>
+    <a href="login.html">Log in</a>
+    <a class="btn-dark" href="memberships.html">Join Now</a>
+  </nav>
+  <details class="menu-toggle">
+    <summary>Menu</summary>
+    <nav class="mobile-nav" aria-label="Mobile">
+      <a href="what-we-do.html">What We Do</a><a href="partners.html">Partners</a><a href="projects.html">Projects</a><a href="contact.html">Contact Us</a>
+      <a href="memberships.html">Memberships</a>
+      <a href="blog.html">The Blog</a>
+      <a href="login.html">Log in</a>
+      <a class="btn-dark" href="memberships.html">Join Now</a>
+    </nav>
+  </details>
 </header>
-
-<section class="membership-grid">
-    <div class="card">
-        <img src="single.jpg" alt="Single Membership">
-        <div class="strip-blue"></div>
-        <div class="content">
-            <h3>Single 24/7</h3>
-            <div class="price">£23 <small style="font-size: 0.4em;">p/m</small></div>
-            <button onclick="openModal('Single 24/7')">Join Now</button>
-        </div>
+<main>
+<section class="hero">
+  <div class="wrap">
+    <h1>Welsh Gym of the Year</h1>
+    <p class="lead">Join for as little as £18.99 a month</p>
+    <div class="hero-actions">
+      <a class="btn-success" href="memberships.html">Join</a>
+      <a class="btn-success" href="contact.html#donate">Donate</a>
     </div>
-
-    <div class="card">
-        <img src="couples.jpg" alt="Couples Membership">
-        <div class="strip-teal"></div>
-        <div class="content">
-            <h3>Couples 24/7</h3>
-            <div class="price">£35 <small style="font-size: 0.4em;">p/m</small></div>
-            <button onclick="openModal('Couples 24/7')">Join Now</button>
-        </div>
+    <div class="awards">
+      <img src="images/1-welsh-fitness-award-logo-02.png" alt="Welsh Fitness Awards">
+      <img src="images/1-welsh-fitness-award-logo-01.png" alt="Welsh Fitness Awards">
     </div>
-
-    <div class="card">
-        <img src="student.jpg" alt="Student Membership">
-        <div class="strip-green"></div>
-        <div class="content">
-            <h3>Student 24/7</h3>
-            <div class="price">£15 <small style="font-size: 0.4em;">p/m</small></div>
-            <button onclick="openModal('Student 24/7')">Join Now</button>
-        </div>
-    </div>
+  </div>
 </section>
-
-<div id="enrollModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <h2 id="planTitle">Membership Signup</h2>
-        <form>
-            <input type="text" placeholder="Full Name" required>
-            <input type="email" placeholder="Email Address" required>
-            <input type="text" placeholder="Full Address" required>
-            <input type="tel" placeholder="Phone Number" required>
-            <div class="checkbox-container">
-                <input type="checkbox" id="terms" required>
-                <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
-            </div>
-            <button type="submit" style="width: 100%;">Complete Purchase</button>
-        </form>
+<section class="section">
+  <div class="narrow center">
+    <h2>Our Mission</h2>
+    <p class="lead" style="font-size:1.6rem">Health, Wellbeing, Affordability &amp; Community</p>
+    <div class="copy">
+      <p>We offer a range of activities, classes &amp; courses at affordable prices. It’s our mission to build a health &amp; wellbeing community that is inclusive for all.</p>
+      <p>We are building a friendly, ‘all are welcome’ environment. Our doors are open wherever you are in your journey.</p>
+      <p>We are community-led. We care about our members and the community we live and work in.</p>
+      <p>It’s our mission to make an impact.</p>
     </div>
-</div>
-
-<script>
-    function openModal(plan) {
-        document.getElementById('planTitle').innerText = "Joining: " + plan;
-        document.getElementById('enrollModal').style.display = 'block';
-    }
-    function closeModal() {
-        document.getElementById('enrollModal').style.display = 'none';
-    }
-    window.onclick = function(event) {
-        if (event.target == document.getElementById('enrollModal')) closeModal();
-    }
-</script>
-
+  </div>
+</section>
+<section class="section" style="padding-top:0">
+  <div class="wrap split">
+    <img src="images/1-high-street-fitness-staff-02.jpg" alt="Staff outside the gym">
+    <div class="center">
+      <h2>About Us</h2>
+      <div class="copy">
+        <p>High Street Fitness and Wellness is a modern &amp; unique facility that offers a wide range of health and wellbeing activities, courses &amp; classes for all ages and abilities. We use an affordable pricing structure in a friendly and welcoming environment because we want this gym to be different. We want this gym to be owned and run by the community and its users.</p>
+        <p>We firmly believe the concept of <strong>POW</strong></p>
+        <p><strong>P</strong>articipation, <strong>O</strong>wnership and <strong>W</strong>arrantee.</p>
+        <p>When we include our users in all aspects of the gym, they feel ownership. When you feel involved &amp; valued, we know we can achieve amazing results.</p>
+        <p>Our aim at High Street Fitness is simple, to improve the health, fitness and wellness of the local community residents.</p>
+      </div>
+      <p><a class="btn-dark" href="what-we-do.html">Learn More</a></p>
+    </div>
+  </div>
+</section>
+<section class="section" style="padding-top:0">
+  <div class="wrap split">
+    <div class="center">
+      <h2>Join Us</h2>
+      <div class="copy">
+        <p>We want to be a part of your journey so why not sign up and join us today</p>
+        <p>Join Wales’ not-for-profit wellbeing organisation and see what difference we can make together</p>
+      </div>
+      <p><a class="btn-dark" href="memberships.html">Find Out How</a></p>
+    </div>
+    <img src="images/1-gym-blue-green-night.jpg" alt="Gym in blue and green light">
+  </div>
+</section>
+<section class="mint section center">
+  <div class="narrow">
+    <h2>Want to know what we are up to?</h2>
+    <p class="copy">Sign up with your email address to receive news and updates.</p>
+    <form data-preview class="split" style="margin-top:1rem">
+      <input class="field" type="email" required placeholder="Email address" aria-label="Email address">
+      <button class="btn-dark" type="submit">Sign Up</button>
+      <p data-preview-note hidden class="copy">Thanks. This preview does not send email.</p>
+    </form>
+  </div>
+</section></main>
+<footer class="footer">
+  <p>© 2018 – 2026 High Street Fitness</p>
+  <p>George Street, Pontypool · <a href="mailto:admin@hsfuk.org">admin@hsfuk.org</a> · Charity Number: 1191451</p>
+  <p class="preview-links">Offline preview · <a href="member.html">Member screen</a> · <a href="staff.html">Staff desk</a></p>
+</footer>
+<script src="preview.js"></script>
 </body>
 </html>

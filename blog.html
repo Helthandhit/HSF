@@ -1,75 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog | High Street Fitness</title>
-    <style>
-        :root {
-            --brand-green: #8cc63f;
-            --brand-teal: #00a99d;
-            --brand-blue: #0056b3;
-            --dark-gray: #4a4a4a;
-        }
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; color: var(--dark-gray); background-color: #f9f9f9; }
-        
-        /* Header */
-        header { padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; background: white; border-bottom: 2px solid #eee; }
-        .logo { height: 60px; }
-        nav a { margin-left: 20px; text-decoration: none; color: var(--dark-gray); font-weight: bold; font-size: 0.9em; }
-
-        /* Blog Layout */
-        .container { max-width: 800px; margin: 50px auto; padding: 20px; }
-        .blog-post { background: white; padding: 30px; margin-bottom: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        .blog-post h2 { color: var(--brand-blue); margin-top: 0; }
-        .meta { font-size: 0.85em; color: #888; margin-bottom: 15px; }
-        .read-more { display: inline-block; margin-top: 15px; color: var(--brand-teal); font-weight: bold; text-decoration: none; }
-        
-        footer { text-align: center; padding: 40px; font-size: 0.9em; color: #777; }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Blog · High Street Fitness</title>
+  <link rel="icon" href="images/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header>
-    <img src="logo.jpg" alt="High Street Fitness Logo" class="logo">
-    <nav>
-        <a href="index.html">HOME</a>
-        <a href="about_us.html">ABOUT US</a>
-        <a href="blog.html">BLOG</a>
-        <a href="#">CLASSES</a>
-        <a href="#">LOCATIONS</a>
-        <a href="#">CONTACT</a>
+<header class="site-header">
+  <a href="index.html"><img class="logo" src="images/1-hsf-brand-logo.svg" alt="HSF UK Logo"></a>
+  <nav class="desktop-nav" aria-label="Primary">
+    <details class="about">
+      <summary>About Us</summary>
+      <div class="about-menu"><a href="what-we-do.html">What We Do</a><a href="partners.html">Partners</a><a href="projects.html">Projects</a><a href="contact.html">Contact Us</a></div>
+    </details>
+    <a href="memberships.html">Memberships</a>
+    <a href="blog.html">The Blog</a>
+    <a href="https://www.facebook.com/HighStreetFitness1">Facebook</a>
+    <a href="https://www.instagram.com/highstreetfitnesspage/">Instagram</a>
+    <a href="login.html">Log in</a>
+    <a class="btn-dark" href="memberships.html">Join Now</a>
+  </nav>
+  <details class="menu-toggle">
+    <summary>Menu</summary>
+    <nav class="mobile-nav" aria-label="Mobile">
+      <a href="what-we-do.html">What We Do</a><a href="partners.html">Partners</a><a href="projects.html">Projects</a><a href="contact.html">Contact Us</a>
+      <a href="memberships.html">Memberships</a>
+      <a href="blog.html">The Blog</a>
+      <a href="login.html">Log in</a>
+      <a class="btn-dark" href="memberships.html">Join Now</a>
     </nav>
+  </details>
 </header>
-
-<div class="container">
-    <h1>Latest News & Tips</h1>
-
-    <article class="blog-post">
-        <h2>Gym at Night: 24hr Access</h2>
-        <div class="meta">22nd May 2023 | Category: 24hr Access</div>
-        <p>We're thrilled to have you as a member of High Street Fitness! As you might already know, we use the app to grant access to our front doors outside of staffed hours. Please make sure to download and register your account for glitch-free access.</p>
-        <a href="#" class="read-more">Read More →</a>
-    </article>
-
-    <article class="blog-post">
-        <h2>HIIT Training Benefits</h2>
-        <div class="meta">15th May 2023 | Category: Workouts</div>
-        <p>High-Intensity Interval Training (HIIT) has become a popular workout style due to its numerous benefits, including increased fat loss, improved cardiovascular health, and time-efficiency. Try our new 20-minute treadmill circuit this week.</p>
-        <a href="#" class="read-more">Read More →</a>
-    </article>
-
-    <article class="blog-post">
-        <h2>Creatine and its Benefits</h2>
-        <div class="meta">9th May 2023 | Category: Nutrition</div>
-        <p>Creatine is the most widely researched sports supplement ever. It is involved in the production of energy in the body, particularly in the muscles. Here we break down the benefits for your strength and recovery.</p>
-        <a href="#" class="read-more">Read More →</a>
-    </article>
-</div>
-
-<footer>
-    <p>© 2026 High Street Fitness | Pontypool</p>
+<main>
+<section class="section"><div class="narrow">
+  <h1>The Blog</h1>
+  <ul class="blog-list">
+    <li>
+        <p class="muted">22 May 2023</p>
+        <h2 style="font-size:1.6rem"><a href="blog-24hr-access.html">24hr Access</a></h2>
+        <p class="copy">We’re going 24hrs. Don’t get locked out by our new door system.</p>
+        <p><a href="blog-24hr-access.html">Read More</a></p>
+      </li><li>
+        <p class="muted">15 May 2023</p>
+        <h2 style="font-size:1.6rem"><a href="blog-hiit.html">HIIT</a></h2>
+        <p class="copy">HIIT workouts can be a brilliant way to boost your fitness goals. Here we take a dive into the benefits of HIIT.</p>
+        <p><a href="blog-hiit.html">Read More</a></p>
+      </li><li>
+        <p class="muted">12 May 2023</p>
+        <h2 style="font-size:1.6rem"><a href="blog-leg-day.html">Workout of The Week - Leg Day!</a></h2>
+        <p class="copy">Need a leg day routine? We have got just the thing for you.</p>
+        <p><a href="blog-leg-day.html">Read More</a></p>
+      </li><li>
+        <p class="muted">9 May 2023</p>
+        <h2 style="font-size:1.6rem"><a href="blog-creatine.html">Creatine and its Benefits</a></h2>
+        <p class="copy">Creatine is the most widely researched sports supplement ever. Here, we try and break it down for you.</p>
+        <p><a href="blog-creatine.html">Read More</a></p>
+      </li><li>
+        <p class="muted">5 May 2023</p>
+        <h2 style="font-size:1.6rem"><a href="blog-weekend-hiit.html">Workout of The Week</a></h2>
+        <p class="copy">Get your weekend HIIT workouts here.</p>
+        <p><a href="blog-weekend-hiit.html">Read More</a></p>
+      </li><li>
+        <p class="muted">25 April 2023</p>
+        <h2 style="font-size:1.6rem"><a href="blog-healthy-weight-loss.html">Healthy Weight Loss For You</a></h2>
+        <p class="copy">Need a hand losing some weight? Let us help you be more healthy.</p>
+        <p><a href="blog-healthy-weight-loss.html">Read More</a></p>
+      </li><li>
+        <p class="muted">20 April 2023</p>
+        <h2 style="font-size:1.6rem"><a href="blog-supplements.html">Supplements Explained</a></h2>
+        <p class="copy">A plain-language look at supplements from the HSF blog.</p>
+        <p><a href="blog-supplements.html">Read More</a></p>
+      </li><li>
+        <p class="muted">24 October 2022</p>
+        <h2 style="font-size:1.6rem"><a href="blog-mental-wellbeing.html">Why Exercise is Vital for Mental Wellbeing</a></h2>
+        <p class="copy">How moving your body supports mental wellbeing.</p>
+        <p><a href="blog-mental-wellbeing.html">Read More</a></p>
+      </li><li>
+        <p class="muted">10 October 2022</p>
+        <h2 style="font-size:1.6rem"><a href="blog-mental-health.html">Improve Your Mental Health - From a Recovered Anorexic</a></h2>
+        <p class="copy">A member story about mental health and the gym.</p>
+        <p><a href="blog-mental-health.html">Read More</a></p>
+      </li><li>
+        <p class="muted">3 October 2022</p>
+        <h2 style="font-size:1.6rem"><a href="blog-yoga.html">5 Benefits of Yoga</a></h2>
+        <p class="copy">Five reasons to try a yoga class with us.</p>
+        <p><a href="blog-yoga.html">Read More</a></p>
+      </li><li>
+        <p class="muted">26 September 2022</p>
+        <h2 style="font-size:1.6rem"><a href="blog-volunteer.html">Volunteer and Get Qualified</a></h2>
+        <p class="copy">Train, volunteer, and pick up a qualification with the gym.</p>
+        <p><a href="blog-volunteer.html">Read More</a></p>
+      </li><li>
+        <p class="muted">23 January 2021</p>
+        <h2 style="font-size:1.6rem"><a href="blog-dafydd-james.html">Dafydd James - Chairperson, Rugby Player, Destroyer of Challenges</a></h2>
+        <p class="copy">A conversation with our chairperson.</p>
+        <p><a href="blog-dafydd-james.html">Read More</a></p>
+      </li><li>
+        <p class="muted">25 May 2019</p>
+        <h2 style="font-size:1.6rem"><a href="blog-journey-pontypool.html">The Journey so far - Pontypool</a></h2>
+        <p class="copy">How the Pontypool project began.</p>
+        <p><a href="blog-journey-pontypool.html">Read More</a></p>
+      </li>
+  </ul>
+</div></section></main>
+<footer class="footer">
+  <p>© 2018 – 2026 High Street Fitness</p>
+  <p>George Street, Pontypool · <a href="mailto:admin@hsfuk.org">admin@hsfuk.org</a> · Charity Number: 1191451</p>
+  <p class="preview-links">Offline preview · <a href="member.html">Member screen</a> · <a href="staff.html">Staff desk</a></p>
 </footer>
-
+<script src="preview.js"></script>
 </body>
 </html>

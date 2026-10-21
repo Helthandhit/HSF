@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Staff desk · High Street Fitness</title>
+  <link rel="icon" href="images/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="app-page">
+<header class="app-bar">
+  <span class="logo-pad"><a href="index.html"><img src="images/1-hsf-brand-logo.svg" alt="High Street Fitness"></a></span>
+  <span>Pontypool desk · <a href="index.html">Site</a></span>
+</header>
+<section class="desk">
+  <div class="desk-head">
+    <div>
+      <h1 style="font-size:2rem">Today at Pontypool</h1>
+      <p class="muted">Demo data for 21/10/2026. Times are Europe/London. Nothing here is live.</p>
+    </div>
+    <button class="btn-success" type="button" data-remote>Unlock front door</button>
+  </div>
+  <p data-remote-msg class="note" hidden>Front door unlocked in this preview only. No check-in was recorded.</p>
+  <section class="panel">
+    <h2>Today's check-ins</h2>
+    <table>
+      <thead><tr><th>Time</th><th>Who</th><th>How</th><th>Result</th></tr></thead>
+      <tbody>
+        <tr><td>21/10/2026, 09:15</td><td>Front door</td><td>REMOTE</td><td>In<br><span class="muted">Staff remote unlock</span></td></tr>
+        <tr><td>21/10/2026, 08:02</td><td>Sam Brooks</td><td>TAP</td><td>Denied<br><span class="muted">Membership not active yet</span></td></tr>
+        <tr><td>21/10/2026, 07:10</td><td>Alex Morgan</td><td>QR</td><td>In<br><span class="muted">Welcome in</span></td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="panel">
+    <h2>Members</h2>
+    <table>
+      <thead><tr><th>Name</th><th>Email</th><th>Plan</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>Jamie Cole</td><td>jamie.cole@example.com</td><td>Community</td><td>Pending <button class="linkish" type="button" data-status>Mark active</button></td></tr>
+        <tr><td>Sam Brooks</td><td>sam.brooks@example.com</td><td>Community</td><td>Pending <button class="linkish" type="button" data-status>Mark active</button></td></tr>
+        <tr><td>Alex Morgan</td><td>alex.morgan@example.com</td><td>24 hour</td><td>Active</td></tr>
+      </tbody>
+    </table>
+  </section>
+</section>
+<script src="preview.js"></script>
+</body>
+</html>
